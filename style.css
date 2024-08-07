@@ -4,20 +4,19 @@
     font-size: 32px;
     font-weight: 400;
     line-height: 48px;
+    box-sizing: border-box;
 }
 
 .logo {
     width: Fixed (120px)px;
     height: Fixed (48px)px;
-    top: 40px;
-    left: 40px;
-    gap: 40px;
+    margin-top: 1rem;
 }
 
 main {
     display: flex;
     margin-top: 1rem;
-    margin-left: 4rem;
+    margin-left: 10rem;
 }
 
 .text-area {
@@ -25,9 +24,74 @@ main {
     color: #0A3871;
     margin-top: 1.5rem;
     text-transform: lowercase;
+    width: 22rem;
 }
 
 ::placeholder {color: #0A3871;}
     .text-area:focus {
         outline: none;
     }
+
+.mensaje {
+    background: white;
+    background-image: url(/Muñeco.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    color: #0A3871;
+    border-radius: 32px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    width: 15rem;
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+.botones {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.btn-encriptar {
+    background: #0A3871;
+    color: white;
+    border: 1px solid #D8DFE8;
+    border-radius: 24px;
+    cursor: pointer;
+    height: 2.2rem;
+    width: 10rem;
+    font-size: 0.7rem;
+}
+
+.btn-desencriptar {
+    background: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    margin-left: 1rem;
+    height: 2.2rem;
+    width: 10rem;
+    font-size: 0.7rem;
+}
+
+.copiar {
+    background: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    height: 2.2rem;
+    width: 10rem;
+    margin-left: 3.5rem;
+    margin-top: 4.3rem;
+    font-size: 0.7rem;
+}
+
+.informacion {
+    color: #495057;
+    font-size: 0.5rem;
+}
