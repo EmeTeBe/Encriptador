@@ -37,6 +37,7 @@ main {
     width: 60%;
     height: 70%;
     margin-left: 32%;
+    resize: none
 }
 
 ::placeholder {color: #0A3871;}
@@ -59,6 +60,8 @@ main {
     height: 26rem;
     top: 5%;
     position: absolute;
+    z-index: 1;
+    resize: none
 }
 
 .mensaje:focus {
@@ -85,6 +88,7 @@ main {
     position: relative;
     left: 2rem;
     top: 17rem;
+    z-index: 1;
 }
 
 .botones {
@@ -130,6 +134,7 @@ main {
     position: relative;
     left: 1rem;
     top: 19.5rem;
+    z-index: 0;
 }
 
 .informacion {
@@ -149,4 +154,65 @@ main {
 
 .informacion::before {
     content: "♥ ";
+  }
+
+  /*Diseño responsive*/
+
+  @media (max-width: 1200px) {
+    main {
+        display: block;
+    }
+
+    .logo {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+    .section1 {
+        display: block;
+        height: 38rem;
+    }
+
+    .section2 {
+        display: block;
+    }
+    .text-area {
+        
+        margin-left: 1%;
+        margin-top: 3rem;
+        font-size: 1.5rem;
+        width: 95%;
+        height: 77%;
+    }
+
+    .botones {
+        position: relative;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .btn-encriptar {
+        height: 2.8rem;
+        width: 15rem;
+        border-radius: 1rem;
+    }
+
+    .btn-desencriptar {
+        height: 2.8rem;
+        width: 15rem;
+        border-radius: 1rem;
+    }
+
+    .informacion {
+        margin: 0 0 0.4rem 0;
+        padding-left: 1.7rem;
+        font-size: 0.8rem;
+    }
+
+    .mensaje {
+        width: 90%;
+        margin-left: 5%;
+        position: relative;
+        background-image: none;
+
+    }
   }
