@@ -123,7 +123,7 @@ main {
 
 
 .copiar {
-    background: #D8DFE8;
+    background: white;
     color: #0A3871;
     border: 1px solid #0A3871;
     border-radius: 24px;
@@ -161,6 +161,7 @@ main {
   @media (max-width: 1200px) {
     main {
         display: block;
+        height: 100%;
     }
 
     .logo {
@@ -169,24 +170,22 @@ main {
     }
     .section1 {
         display: block;
-        height: 38rem;
+        height: 30rem;
     }
 
     .section2 {
         display: block;
     }
     .text-area {
-        
         margin-left: 1%;
         margin-top: 3rem;
         font-size: 1.5rem;
         width: 95%;
-        height: 77%;
+        height: 70%;
     }
 
     .botones {
-        position: relative;
-        justify-content: space-evenly;
+        gap: 10px;
         margin: 0;
     }
 
@@ -209,10 +208,42 @@ main {
     }
 
     .mensaje {
-        width: 90%;
-        margin-left: 5%;
-        position: relative;
+        width: 94%;
+        margin-left: 3%;
+        position: absolute;
         background-image: none;
-
+        height: 6rem;
+        top: 33.5rem;
     }
+
+    .btn-copiar {
+        display: flex;
+        justify-content: center;
+    }
+
+    .copiar {
+        top: 0;
+        left: 0;
+        height: 2.8rem;
+        width: 85%;
+        border-radius: 1rem; 
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    .copy {
+        padding-left: 0;
+    }
+
+    .ningun {
+        width: 16rem;
+        font-size: 1rem;
+        left: 25%;
+        top: 2rem;
+    }
+
   }
