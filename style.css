@@ -51,9 +51,10 @@ main {
     background-position: bottom 60% right 50%;
     background-repeat: no-repeat;
     border: none;
-    color: #0A3871;
+    color: #6e6e6e;
     border-radius: 32px;
     box-shadow: 6px 6px 35px 0px rgba(133,133,133,1);
+    font-size: 0.8rem;
     padding-left: 0.5rem;
     padding-top: 1rem;
     width: 12rem;
