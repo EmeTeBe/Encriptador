@@ -23,6 +23,17 @@ function btnDesencriptar() {
     textArea.value = "";
 }
 
+function copyText() {
+    let textoACopiar = document.querySelector(".mensaje");
+
+    textoACopiar.select();
+    textoACopiar.setSelectionRange(0, 9999);
+
+    navigator.clipboard.writeText(textoACopiar.value);
+
+    alert("Texto copiado");
+}
+
 
 
 function encriptar(stringEncriptada) {
