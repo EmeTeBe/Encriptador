@@ -73,7 +73,7 @@ main {
 
 
 .logo {
-    width: Fixed (120px)px;
+    width: (120px)px;
     height: Fixed (48px)px;
     margin-top: 0.3rem;
     margin-left: 3rem;
@@ -263,4 +263,65 @@ main {
         margin: 0 auto;
     }
 
+  }
+
+  @media (max-width: 600px) {
+    .logo {
+        margin-top: 0.4rem;
+    }
+
+    .text-area {
+        margin-top: 1.5rem;
+        font-size: 1rem;
+        padding-left: 0.5rem;
+        height: 35%;
+    }
+
+    .informacion {
+        font-size: 0.4rem;
+        margin: 0;
+        padding: 0 0 0 0.6rem;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-encriptar{
+        width: 90%;
+        height: 2.3rem;
+    }
+
+    .btn-desencriptar {
+        width: 90%;
+        height: 2.3rem;
+    }
+
+    .section1 {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .mensaje {
+        padding-top: 0.5rem;
+    }
+
+    .copiar {
+        width: 90%;
+        height: 2.3rem;
+    }
+
+    .ningun {
+        width: 70%;
+    }
+
+    .section2 {
+        height: auto;
+    }
+
+    .footer {
+        margin-top: 0.5rem;
+        top: -3;
+    }
   }
