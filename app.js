@@ -9,6 +9,10 @@ La letra "o" es convertida para "ober"
 La letra "u" es convertida para "ufat" */
 
 function btnEncriptar() {
+    if (textArea.value.trim() === "") {
+        alert("Por favor, ingrese texto para encriptar.");
+        return;
+    }
     const textoEncriptado = encriptar(textArea.value);
     mensaje.value = textoEncriptado;
     textArea.value = "";
@@ -18,12 +22,24 @@ function btnEncriptar() {
 }
 
 function btnDesencriptar() {
+    if (textArea.value.trim() === "") {
+        alert("Por favor, ingrese texto para desencriptar.");
+        return;
+    }
     const textoEncriptado = desencriptar(textArea.value);
     mensaje.value = textoEncriptado;
     textArea.value = "";
+    mensaje.style.backgroundImage = "none";
+    document.querySelector(".ningun").style.zIndex = -1;
+    document.querySelector(".copiar").style.zIndex = 1;
 }
 
 function copyText() {
+    if (mensaje.value.trim() === "") {
+        alert("No hay texto para copiar.");
+        location.reload();
+        return;
+    }
     let textoACopiar = document.querySelector(".mensaje");
 
     textoACopiar.select();
@@ -32,6 +48,7 @@ function copyText() {
     navigator.clipboard.writeText(textoACopiar.value);
 
     alert("Texto copiado");
+    location.reload();
 }
 
 
