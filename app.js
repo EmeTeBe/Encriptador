@@ -11,6 +11,7 @@ La letra "u" es convertida para "ufat" */
 function btnEncriptar() {
     if (textArea.value.trim() === "") {
         alert("Por favor, ingrese texto para encriptar.");
+        location.reload();
         return;
     }
     const textoEncriptado = encriptar(textArea.value);
@@ -24,6 +25,7 @@ function btnEncriptar() {
 function btnDesencriptar() {
     if (textArea.value.trim() === "") {
         alert("Por favor, ingrese texto para desencriptar.");
+        location.reload();
         return;
     }
     const textoEncriptado = desencriptar(textArea.value);
